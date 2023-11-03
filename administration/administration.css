@@ -1,0 +1,98 @@
+a {
+    text-decoration: none;
+    font-size: 3.5rem;
+    text-align: none;
+  }
+  ul{
+    list-style: none;
+  }
+  .success,.error {
+    color: white;
+    padding: 10px;
+    margin: 10px 0 15px 0;
+    font-size: xx-large;
+    text-align: center;
+  }
+  .success{
+      background: green;
+  }
+  .error{
+      background: red;
+  }
+  .book-card {
+    border: 1px solid #d61616;
+    display: flex;
+    margin:1rem;
+    padding: 1rem;
+  }
+  .books-container{
+
+    grid-template-columns: auto auto auto;
+  }
+  .book-image {
+    width: 150px;
+    height: 70%;
+    margin-right: 10px;
+  }
+  .book-details {
+    flex: 1;
+  }
+  .book-title {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .delete {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+  }
+  
+  /* Style for the "Remove" link */
+  .delete:hover {
+    text-decoration: underline;
+  }
+  body{
+    width: 100vw;
+    background: #0eb5e7;
+
+  }
+
+   .full-width span{
+    background-color: rgb(21, 23, 23);
+  }
+  #bookForm{
+  width: 80%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 1rem;
+  }
+.u-full-width.sub {
+  background-color: #1778b9;
+  color: #bbb;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.delete {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #f71212;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}

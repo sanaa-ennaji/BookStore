@@ -43,7 +43,7 @@ ul {
   font-size: 30px;
   width: fit-content;
   position: relative;
-  z-index: 1;
+  
   transition: 0.3s;
 }
 .main-title::before,
@@ -133,15 +133,18 @@ ul {
 }
 .header .main-nav {
   display: flex;
+  margin-bottom: 0rem;
 }
 .header .main-nav > li:hover .mega-menu {
   opacity: 1;
   z-index: 100;
   top: calc(100% + 1px);
+ 
 }
 .header .main-nav > li > a {
   display: flex;
   justify-content: center;
+  text-decoration: none;
   align-items: center;
   height: 72px;
   position: relative;
@@ -150,6 +153,7 @@ ul {
   overflow: hidden;
   font-size: 18px;
   transition: 0.3s;
+ 
 }
 .burger-menu {
   display: none;
@@ -165,13 +169,16 @@ ul {
       background-color: #2196f3;
       width: 100vw;
       z-index: 1;
+    
        
   }
   .main-nav li{
     padding-bottom: 1rem; 
+   
   }
   .main-nav li a{
       color: #f8f5f5; 
+     
   }
  .header .main-nav.active {
       display: flex;
@@ -225,6 +232,7 @@ ul {
     flex-direction: column;
     gap: 0;
     padding: 5px;
+
   }
 }
 .header .mega-menu .image img {
@@ -265,6 +273,7 @@ ul {
   width: 100%;
 }
 .header .mega-menu .links li a {
+  text-decoration: none;
   color: #2196f3;
   padding: 15px;
   display: block;
@@ -453,8 +462,14 @@ ul {
   height: 100%;
   background-color: rgb(255 255 255 / 95%);
 }
-.stats h2 {
+
+ h2 {
   font-weight: bold;
+  font-size: 40px;
+  width: fit-content;
+  margin: 0 auto 40px;
+  position: relative;
+ 
 }
   .stats h2 {
     font-weight: bold;
@@ -636,41 +651,4 @@ ul {
     border-top: 1px solid #444;
   }
   /* End Footer */
-  /* Start Animation */
-  @keyframes up-and-down {
-    0%,
-    100% {
-      top: 0;
-    }
-    50% {
-      top: -50px;
-    }
-  }
-
-  @keyframes left-move {
-    50% {
-      left: 0;
-      width: 12px;
-      height: 12px;
-    }
-    100% {
-      left: 0;
-      border-radius: 0;
-      width: 50%;
-      height: 100%;
-    }
-  }
-  @keyframes right-move {
-    50% {
-      right: 0;
-      width: 12px;
-      height: 12px;
-    }
-    100% {
-      right: 0;
-      border-radius: 0;
-      width: 50%;
-      height: 100%;
-    }
-  }
-  /* End Animation */
+ 
